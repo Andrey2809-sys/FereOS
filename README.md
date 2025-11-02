@@ -4,9 +4,8 @@
 [![OS: 16-bit](https://img.shields.io/badge/OS-16--bit-important.svg)](https://en.wikipedia.org/wiki/16-bit)
 [![Emulator: QEMU](https://img.shields.io/badge/Emulator-QEMU-red.svg)](https://www.qemu.org/)
 
-Welcome to **FereOS**, a from-scratch 16-bit operating system crafted as a passionate learning project by a 15-year-old developer.
+Welcome to **FereOS**, a 16-bit operating system crafted as a learning project by a 15-year-old developer.
 
-This project represents the culmination of 1-2 weeks of intense learning and development, resulting in a functional, minimal OS with its own kernel, drivers, and shell.
 
 ## ✨ Features
 
@@ -41,11 +40,7 @@ To build and run FereOS, you will need a cross-compiler for `i686-elf` target, N
     git clone https://github.com/your-username/FereOS.git
     cd FereOS
     ```
-2.  Build the project:
-    ```bash
-    make
-    ```
-3.  Run it in QEMU:
+2.  Run it in QEMU:
     ```bash
     make run
     ```
