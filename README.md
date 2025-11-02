@@ -37,7 +37,7 @@ To build and run FereOS, you will need a cross-compiler for `i686-elf` target, N
 
 1.  Clone this repository:
     ```bash
-    git clone https://github.com/your-username/FereOS.git
+    git clone https://github.com/Andrey2809-sys/FereOS.git
     cd FereOS
     ```
 2.  Run it in QEMU:
