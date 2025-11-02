@@ -47,7 +47,11 @@ To build and run FereOS, you will need a cross-compiler for `i686-elf` target, N
 
 ## 🧠 A Note from the Developer
 
-> "Hello! I'm the 15-year-old developer behind FereOS. This project started as a challenge to understand the fundamental concepts of how computers work at the lowest level. After just a week or two of studying OS development, I decided to dive in and build my own. FereOS is the result of that journey—it's not the most advanced OS, but it's mine, and I'm incredibly proud of it. I hope this project can inspire other young developers to tackle ambitious projects and never stop learning!"
+> Hey! I'm a 15-year-old developer who tried everything in programming - from web to apps. But when I discovered low-level programming and OS development, it just clicked. This is where the real magic happens!
+
+FereOS is my first operating system. I built it after just 1-2 weeks of learning. It's not perfect, but it's MINE. Every line of code taught me something new about how computers actually work.
+
+If you're a young developer thinking about trying OS dev - JUST DO IT. Don't let anyone tell you it's too hard. Start small, keep learning, and build cool shit!
 
 
 ## 🚀 What's Next?
