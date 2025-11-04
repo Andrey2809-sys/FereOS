@@ -4,7 +4,7 @@
 [![OS: 16-bit](https://img.shields.io/badge/OS-16--bit-important.svg)](https://en.wikipedia.org/wiki/16-bit)
 [![Emulator: QEMU](https://img.shields.io/badge/Emulator-QEMU-red.svg)](https://www.qemu.org/)
 
-Welcome to **FereOS**, a 16-bit operating system crafted as a learning project by a 15-year-old developer.
+Welcome to **FereOS**, a simple 16-bit operating system crafted as a learning project by a 15-year-old developer.
 
 
 ## ✨ Features
@@ -31,7 +31,7 @@ To build and run FereOS, you will need a cross-compiler for `i686-elf` target, N
 *   `make clean` - Clean up all build artifacts.
 *   `make` - Build the entire OS, producing the final bootable disk image.
 *   `make run` - Launch the OS in the QEMU emulator.
-*   `make disasm` - Generate a disassembly of the kernel. (Very useful for debugging and learning!)
+*   `make disasm` - Generate a disassembly of the kernel. 
 
 ### Quick Start:
 
@@ -47,12 +47,12 @@ To build and run FereOS, you will need a cross-compiler for `i686-elf` target, N
 
 ## 🧠 A Note from the Developer
 
-> Hey! I'm a 15-year-old developer who tried everything in programming - from web to apps. But when I discovered low-level programming and OS development, it just clicked. This is where the real magic happens!FereOS is my first operating system. I built it after just 1-2 weeks of learning. It's not perfect, but it's MINE. Every line of code taught me something new about how computers actually work.If you're a young developer thinking about trying OS dev - JUST DO IT. Don't let anyone tell you it's too hard. Start small, keep learning, and build cool shit!
+> Hey! I'm a 15-year-old developer who tried everything in programming - from web to apps. But when I discovered low-level programming and OS development, it just clicked. FereOS is my first operating system. I built it after just 1-2 weeks of learning. It's not perfect, but it's MINE. Every line of code taught me something new about how computers actually work. 
 
 
 ## 🚀 What's Next?
 
-This is just the beginning! Future plans for FereOS might include:
+This is just the beginning! Future plans include:
 *   A simple File System.
 *   Support for more complex commands and programs.
 *   Enhanced memory management (e.g., heap allocation).
