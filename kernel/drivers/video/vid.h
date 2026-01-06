@@ -5,15 +5,22 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h>
-//#include "../../memory/mem.h"
+#include "../../memory/mem.h"
 
 
 #define VRAM_ADDRESS 0xB8000
-#define GREEN        0x02
-#define RED          0x04
 
-#define CURSOR_X (uint8_t*) 0x12800
-#define CURSOR_Y (uint8_t*) 0x12804
+// colors
+#define GREEN        10
+#define CYAN         3
+#define YELLOW       14
+#define PURPLE       5
+#define RED          4
+#define BASE_COLOR   YELLOW     
+
+
+#define CURSOR_X (uint8_t*) (KERNEL_END+0x8)
+#define CURSOR_Y (uint8_t*) (KERNEL_END+0x10)
 
 #define CURRENT NULL
 
@@ -32,12 +39,12 @@ vga_t getvga();
 
 
 // Output
-void putch(char c, int pos, uint8_t color); // Put Char
+void putch(char c, int pos, uint8_t color);       // Put Char
 void clear_screen(void);
-void print(const char *str, bool err_mode); // Print string
-void print_int(int num);
+void kprint(const char *_Str, bool err_mode);     // Print string
+void print_int(const int _Num);
 void reprint(const char *str);                    // Print in the corner
-__attribute__((noreturn)) void panic(const char *reason);
+__attribute__((noreturn)) void panic(const char *_Reason);
 
 
 #endif

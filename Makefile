@@ -4,10 +4,10 @@ CC   = i686-elf-gcc
 LD   = i686-elf-ld
 OBJCOPY = objcopy
 
-OBJFILES = build/kernel/kernel.o build/kernel/vid.o build/kernel/kb.o build/kernel/power.o build/kernel/sh.o build/kernel/mem.o
+OBJFILES = build/kernel/kernel.o build/kernel/vid.o build/kernel/kb.o build/kernel/power.o build/kernel/sh.o build/kernel/mem.o build/kernel/fs.o
 
 
-CFLAGS = -m16 -c -ffreestanding -nostdlib -fno-pic
+CFLAGS = -w -m16 -mgeneral-regs-only -c -ffreestanding -nostdlib -fno-pic
 
 QEMU = qemu-system-x86_64
 
@@ -24,6 +24,7 @@ all:
 	$(CC) $(CFLAGS) kernel/drivers/power/power.c -o build/kernel/power.o
 	$(CC) $(CFLAGS) kernel/shell/sh.c -o build/kernel/sh.o
 	$(CC) $(CFLAGS) kernel/memory/mem.c -o build/kernel/mem.o
+	$(CC) $(CFLAGS) kernel/fs/fs.c -o build/kernel/fs.o
 	$(LD) -Ttext=0x10000 --oformat=binary -o build/kernel/kernel.bin $(OBJFILES)
 
 	@echo 3) Build img

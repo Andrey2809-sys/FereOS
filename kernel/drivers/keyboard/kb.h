@@ -1,6 +1,6 @@
 
-#ifndef KB_H
-#define KB_H
+#ifndef KEYBOARD_H
+#define KEYBOARD_H
 
 #include <stdint.h>
 #include "../video/vid.h"
@@ -12,6 +12,7 @@ typedef struct {
 } key_obj;
 
 
-key_obj read_key(void);
+void read_key(key_obj *_Key);
+
 
 #endif

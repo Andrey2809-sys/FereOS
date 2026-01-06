@@ -20,20 +20,26 @@ void *kmalloc(uint32_t size)
 
 void setmem(uint32_t address, uint32_t smt)
 {
-    if ((address < 0x12800) || (address >= 0x13000)) {
+    if ((address < KERNEL_END)) {
         panic("[PANIC] set bad memory");
     }
-    volatile uint32_t *mem = (volatile uint32_t*)address;
+    volatile uint32_t *mem = (volatile uint32_t*)(address);
     *mem = smt;
 }
 
 
 uint32_t getmem(uint32_t address)
 {
-    if ((address < 0x12800) || (address > 0x13000)) {
+    if ((address < KERNEL_END)) {
         panic("[PANIC] get bad memory");
     }
-    volatile uint32_t *mem = (volatile uint32_t*) address;
+    volatile uint32_t *mem = (volatile uint32_t*) (address);
     return *mem;
 }
 
+void ptr_to_segoff(void *ptr, uint16_t *seg, uint16_t *off)
+{
+    uint32_t linear = (uint32_t) ptr;
+    *seg = (uint16_t) linear >> 4;
+    *off = (uint16_t) linear & 0xF;
+}
