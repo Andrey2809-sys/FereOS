@@ -9,18 +9,20 @@ Welcome to **FereOS**, a simple 16-bit operating system crafted as a learning pr
 
 ## ✨ Features
 
-*   **Bootloader:** Written in x86 Assembly, responsible for the initial startup and loading the kernel into memory.
+*   **Bootloader:** Written in x86 Assembly
 *   **Kernel:** The core of the OS, developed in C.
 *   **Core Drivers:**
-    *   **VGA Text Mode Driver:** Handles all text output to the screen.
-    *   **Keyboard Input Driver:** Utilizes BIOS interrupts to read user input from the keyboard.
-*   **Memory Management:** Implements a simple and effective stack-based allocator.
-*   **Interactive Shell:** A custom-built shell that supports the following commands:
-    *   `info` - Display system information.
-    *   `help` - Show a list of available commands.
-    *   `cls` - Clear the terminal screen.
-    *   `reboot` - Restart the system.
-    *   `shutdown` - Power down the machine (in QEMU).
+    *   **VGA Text Mode Driver:**
+    *   **Keyboard Input Driver:**
+*   **Memory Management:** Implements a simple stack-based allocator.
+*   **Simple File System:** which support folowing commands:
+    *   `touch` - Create file.
+    *   `ls` - Show a list of all files.
+    *   `write` - Write some data in the file.
+    *   `cat` - Read the content from file.
+    *   `rm` - Delete the file.
+    *   etc.
+*   **Simple shell** supports different commands. you can see him enter `help` in the OS.
 
 ## 🛠️ Building & Running
 
@@ -45,21 +47,14 @@ To build and run FereOS, you will need a cross-compiler for `i686-elf` target, N
     make run
     ```
 
-## 🧠 A Note from the Developer
-
-> Hey! I'm a 15-year-old developer who tried everything in programming - from web to apps. But when I discovered low-level programming and OS development, it just clicked. FereOS is my first operating system. I built it after just 1-2 weeks of learning. It's not perfect, but it's MINE. Every line of code taught me something new about how computers actually work. 
-
 
 ## 🚀 What's Next?
 
 This is just the beginning! Future plans include:
-*   A simple File System.
-*   Support for more complex commands and programs.
+*   Executing user programs
+*   Support kernel modules
 *   Enhanced memory management (e.g., heap allocation).
 
 ---
 
 **Star this repository if you find this project interesting or inspiring! ⭐**
-
----
-*FereOS - A journey into the heart of computing.*
