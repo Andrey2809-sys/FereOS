@@ -12,8 +12,8 @@ Welcome to **FereOS**, a simple 16-bit operating system crafted as a learning pr
 *   **Bootloader:** Written in x86 Assembly
 *   **Kernel:** The core of the OS, developed in C.
 *   **Core Drivers:**
-    *   **VGA Text Mode Driver:**
-    *   **Keyboard Input Driver:**
+    *   **VGA Text Mode Driver**
+    *   **Keyboard Input Driver**
 *   **Memory Management:** Implements a simple stack-based allocator.
 *   **Simple File System:** which support folowing commands:
     *   `touch` - Create file.
@@ -22,7 +22,7 @@ Welcome to **FereOS**, a simple 16-bit operating system crafted as a learning pr
     *   `cat` - Read the content from file.
     *   `rm` - Delete the file.
     *   etc.
-*   **Simple shell** supports different commands. you can see him enter `help` in the OS.
+*   **Simple shell** supports different commands. you can see it enter `help` in the OS.
 
 ## 🛠️ Building & Running
 
